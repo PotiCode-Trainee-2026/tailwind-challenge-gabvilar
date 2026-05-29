@@ -2,13 +2,13 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/javascript.svg" />
+    <link rel="icon" href="src/assets/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Vilar Dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-[radial-gradient(circle,_rgb(15,15,15)_0%,_rgba(0,0,0,1)_100%)]">
+  <body class="bg-[radial-gradient(circle,_rgb(15,15,15)_0%,_rgba(0,0,0,1)_100%)] font-serif">
     
     <nav class="fixed z-[999] flex justify-center items-center mx-auto top-[10px] left-[5%] right-[5%] w-[90%] max-w-[1200px] h-[50px] border border-[rgba(29,29,29,0.9)] rounded-[20px] bg-[rgba(29,29,29,0.85)]">
       <ul class="flex justify-center items-center gap-[7.5%] w-[90%] list-none">
@@ -21,20 +21,20 @@
 
     <div class="h-screen flex justify-center items-center flex-col mb-[50px]" id="hero">
       <div class="h-[60vh] w-[50vw] flex justify-center items-center flex-col m-auto gap-[1vh]">
-        <img src="./src/assets/IMG_2203.jpg" alt="foto perfil" class="h-[250px] w-[250px] rounded-full mb-[3vh]"/>
+        <img src="src/assets/IMG_2203.jpg" alt="foto perfil" class="h-[250px] w-[250px] rounded-full mb-[3vh]"/>
         <h1 class="text-[rgb(182,175,175)] text-[clamp(1.3rem,7.5vw,4rem)]">Gabriel Vilar</h1>
         <h2 class="text-[rgb(126,119,119)] text-[clamp(0.8rem,4vw,1.5rem)]">Web Developer</h2>
       </div>
     </div>
 
-    <div class="container" id="projects">
-      <div class="projects">
-        <h1>Projects</h1>
-        <div class="content">
-          <div class="card" onclick="window.open('https://github.com/selan-active-classes/t03-projeto-passgen-pass-the-word', '_blank');">
-            <img src="assets/password.jpg" alt="" />
-            <h2>Passgen</h2>
-            <h3>
+    <div class="h-screen flex justify-center items-center flex-col mb-[50px]" id="projects">
+      <div class="flex flex-col items-center justify-center w-[90%] h-[90%] mb-[300px] max-[800px]:h-[600%] max-[800px]:mt-[600px] max-[800px]:mb-[200px]">
+        <h1 class="text-white text-[clamp(1.5rem,3vw,3rem)] mb-[40px] mt-[80px]">Projects</h1>
+        <div class="flex flex-row items-center justify-evenly w-[90%] gap-[20px] max-[800px]:flex-col">
+          <div class="p-0 h-[50vh] w-[50vw] bg-[rgba(42,43,49,0.4)] border border-[rgba(42,43,49,0.6)] rounded-[10px] flex flex-col transition-all duration-500 hover:translate-y-[-1vh] hover:cursor-pointer hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] max-[800px]:w-[90%] max-[800px]:max-w[400px]" onclick="window.open('https://github.com/selan-active-classes/t03-projeto-passgen-pass-the-word', '_blank');">
+            <img src="src/assets/password.jpg" alt="passgen photo" class="w-full h-1/2 rounded-t-[10px] object-cover"/>
+            <h2 class="mx-auto pt-[5px] text-white text-[clamp(1rem,1.5rem,2rem)]">Passgen</h2>
+            <h3 class="px-[7px] text-[rgb(194,195,196)] text-[clamp(12px,0.9vw,1.3rem)] text-justify indent-[1em] max-[800px]:text-[clamp(12px,2vw,1.5rem)]">
               A customizable Command Line Interface (CLI) application that
               generates secure, randomized passwords. Users can define the
               password length and tailor its complexity by selecting from nine
@@ -43,54 +43,48 @@
               entropy calculator to evaluate the cryptographic strength of the
               generated passwords.
             </h3>
-            <p>C++</p>
+            <p class="mt-auto mb-[1vh] ml-[7px] w-fit text-[clamp(10px,0.9vw,1.5rem)] max-[800px]:text-[clamp(12px,2vw,1.5rem)] p-[2px] text-[#686767] border border-[rgba(42,43,49,0.7)] bg-[rgba(42,43,49,0.6)] rounded-[4px]">C++</p>
           </div>
 
-          <div class="card">
-            <img src="/assets/placeholder.png" alt="" />
-            <h2>Projeto 2</h2>
-            <h3>Descrição breve desse projeto que ainda não possuo.</h3>
-            <p>C++</p>
+          <div class="p-0 h-[50vh] w-[50vw] bg-[rgba(42,43,49,0.4)] border border-[rgba(42,43,49,0.6)] rounded-[10px] flex flex-col transition-all duration-500 hover:translate-y-[-1vh] hover:cursor-pointer hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] max-[800px]:w-[90%] max-[800px]:max-w[400px]">
+            <img src="src/assets/placeholder.png" alt="" class="w-full h-1/2 rounded-t-[10px] object-cover"/>
+            <h2 class="mx-auto pt-[5px] text-white text-[clamp(1rem,1.5rem,2rem)]">Projeto 2</h2>
+            <h3 class="px-[7px] text-[rgb(194,195,196)] text-[clamp(12px,0.9vw,1.3rem)] text-justify indent-[1em] max-[800px]:text-[clamp(12px,2vw,1.5rem)]">Descrição breve desse projeto que ainda não possuo.</h3>
+            <p class="mt-auto mb-[1vh] ml-[7px] w-fit text-[clamp(10px,0.9vw,1.5rem)] max-[800px]:text-[clamp(12px,2vw,1.5rem)] p-[2px] text-[#686767] border border-[rgba(42,43,49,0.7)] bg-[rgba(42,43,49,0.6)] rounded-[4px]">C++</p>
           </div>
 
-          <div class="card">
-            <img src="/assets/placeholder.png" alt="" />
-            <h2>Projeto 3</h2>
-            <h3>Descrição breve desse projeto que ainda não possuo.</h3>
-            <p>C++</p>
+          <div class="p-0 h-[50vh] w-[50vw] bg-[rgba(42,43,49,0.4)] border border-[rgba(42,43,49,0.6)] rounded-[10px] flex flex-col transition-all duration-500 hover:translate-y-[-1vh] hover:cursor-pointer hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] max-[800px]:w-[90%] max-[800px]:max-w[400px]">
+            <img src="src/assets/placeholder.png" alt="" class="w-full h-1/2 rounded-t-[10px] object-cover"/>
+            <h2 class="mx-auto pt-[5px] text-white text-[clamp(1rem,1.5rem,2rem)]">Projeto 3</h2>
+            <h3 class="px-[7px] text-[rgb(194,195,196)] text-[clamp(12px,0.9vw,1.3rem)] text-justify indent-[1em] max-[800px]:text-[clamp(12px,2vw,1.5rem)]">Descrição breve desse projeto que ainda não possuo.</h3>
+            <p class="mt-auto mb-[1vh] ml-[7px] w-fit text-[clamp(10px,0.9vw,1.5rem)] max-[800px]:text-[clamp(12px,2vw,1.5rem)] p-[2px] text-[#686767] border border-[rgba(42,43,49,0.7)] bg-[rgba(42,43,49,0.6)] rounded-[4px]">C++</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container" id="contact">
-      <div class="hr"></div>
-      <div class="contact">
-        <h1>Get in touch</h1>
-        <ul>
-          <li>
-            <a href="mailto:gabrielbrandaovilar@gmail.com" target="_blank"
-              >Email</a
-            >
+    <div class="h-[23vh] flex justify-start items-center flex-col mb-0 max-[800px]:mt-[800px]" id="contact">
+      <div class="bg-[#2c2c2c] h-[1px] w-full"></div>
+      <div class="w-[70%] items-center flex flex-col h-full">
+        <h1 class="mt-[20px] text-[clamp(2rem,3vw,3rem)] text-white">Get in touch</h1>
+        <ul class="flex justify-center items-center mx-auto mt-[50px] mb-auto gap-[14.5%] w-full list-none">
+          <li class="relative hover:cursor-pointer transition-all duration-700 hover:-translate-y-[5px] group">
+            <a href="mailto:gabrielbrandaovilar@gmail.com" target="_blank" class="no-underline text-[clamp(1.5rem,2vw,2rem)] text-white after:content-[''] after:bg-white after:absolute after:-bottom-[12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] group-hover:after:w-full group-hover:after:-translate-y-[5px] after:transition-all after:duration-700">Email</a>
           </li>
-          <li>
-            <a href="https://github.com/gabvilar" target="_blank">GitHub</a>
+          <li class="relative hover:cursor-pointer transition-all duration-700 hover:-translate-y-[5px] group">
+            <a href="https://github.com/gabvilar" target="_blank" class="no-underline text-[clamp(1.5rem,2vw,2rem)] text-white after:content-[''] after:bg-white after:absolute after:-bottom-[12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] group-hover:after:w-full group-hover:after:-translate-y-[5px] after:transition-all after:duration-700">GitHub</a>
           </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/gabriel-vilar-006433411"
-              target="_blank"
-              >Linkedin</a
-            >
+          <li class="relative hover:cursor-pointer transition-all duration-700 hover:-translate-y-[5px] group">
+            <a href="https://www.linkedin.com/in/gabriel-vilar-006433411" target="_blank" class="no-underline text-[clamp(1.5rem,2vw,2rem)] text-white after:content-[''] after:bg-white after:absolute after:-bottom-[12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] group-hover:after:w-full group-hover:after:-translate-y-[5px] after:transition-all after:duration-700">Linkedin</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="hr"></div>
+    <div class="bg-[#2c2c2c] h-[1px] w-full"></div>
 
-    <footer>
-      <p>© 2026 Gabriel Vilar</p>
+    <footer class="flex items-center h-[80px]">
+      <p class="text-white pl-[10vw] text-[clamp(1rem,1.2rem,1.5em)]">© 2026 Gabriel Vilar</p>
     </footer>
   </body>
 </html>
