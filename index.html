@@ -1,27 +1,29 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth m-0 p-o">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Vilar Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-[radial-gradient(circle, rgb(15, 15, 15) 0%, rgba(0, 0, 0, 1) 100%)]">
-    <nav class="fixed z-[999] flex justify-center items-center mx-auto top-[10px] left-[5%] right-[5%] w-90% max-w-[1200px] h-[50px] border-[rgba(29, 29, 29, 0.9)] rounded-[20px] bg-[rgba(29, 29, 29, 0.85)]">
+  <body class="bg-[radial-gradient(circle,_rgb(15,15,15)_0%,_rgba(0,0,0,1)_100%)]">
+    
+    <nav class="fixed z-[999] flex justify-center items-center mx-auto top-[10px] left-[5%] right-[5%] w-[90%] max-w-[1200px] h-[50px] border border-[rgba(29,29,29,0.9)] rounded-[20px] bg-[rgba(29,29,29,0.85)]">
       <ul class="flex justify-center items-center gap-[7.5%] w-[90%] list-none">
-        <li class="mr-auto text-white text-[clamp(0.9rem, 5vw, 1.5rem)]">Gabriel Vilar</li>
-        <li><a href="#hero" class="justify-evenly items-center text-white no-underline gap-[20px] relative text-[font-size: clamp(0.7rem, 3.8vw, 1.2rem)] after:content-[''] after:bg-[rgb(196, 196, 196)] after:absolute after:bottom-[-12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] after:transition-all after:duration-300 hover:after:w-full hover:cursor-pointer">About</a></li>
-        <li><a href="#projects" class="justify-evenly items-center text-white no-underline gap-[20px] relative text-[font-size: clamp(0.7rem, 3.8vw, 1.2rem)] after:content-[''] after:bg-[rgb(196, 196, 196)] after:absolute after:bottom-[-12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] after:transition-all after:duration-300 hover:after:w-full hover:cursor-pointer">Projects</a></li>
-        <li><a href="#contact" class="justify-evenly items-center text-white no-underline gap-[20px] relative text-[font-size: clamp(0.7rem, 3.8vw, 1.2rem)] after:content-[''] after:bg-[rgb(196, 196, 196)] after:absolute after:bottom-[-12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] after:transition-all after:duration-300 hover:after:w-full hover:cursor-pointer">Contact</a></li>
+        <li class="mr-auto text-white text-[clamp(0.9rem,5vw,1.5rem)]">Gabriel Vilar</li>
+        <li><a href="#hero" class="justify-evenly items-center text-white no-underline gap-[20px] relative text-[clamp(0.7rem,3.8vw,1.2rem)] after:content-[''] after:bg-[rgb(196,196,196)] after:absolute after:bottom-[-12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] after:transition-all after:duration-300 hover:after:w-full hover:cursor-pointer">About</a></li>
+        <li><a href="#projects" class="justify-evenly items-center text-white no-underline gap-[20px] relative text-[clamp(0.7rem,3.8vw,1.2rem)] after:content-[''] after:bg-[rgb(196,196,196)] after:absolute after:bottom-[-12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] after:transition-all after:duration-300 hover:after:w-full hover:cursor-pointer">Projects</a></li>
+        <li><a href="#contact" class="justify-evenly items-center text-white no-underline gap-[20px] relative text-[clamp(0.7rem,3.8vw,1.2rem)] after:content-[''] after:bg-[rgb(196,196,196)] after:absolute after:bottom-[-12px] after:left-0 after:h-[3px] after:w-0 after:rounded-[10px] after:transition-all after:duration-300 hover:after:w-full hover:cursor-pointer">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="h-full flex justify-center items-center flex-col mb-[50px]" id="hero">
-      <div class="h-[60vh] w-[50vw] flex justify-center items-center flex-column m-auto gap-[1vh]">
-        <img src="./assets/IMG_2203.jpg" alt="foto perfil" class="h-[250px] w-[250px] rounded-full mb-[3vh]"/>
-        <h1 class="text-[rgb(182, 175, 175)] text-[clamp(1.3rem, 7.5vw, 4rem)]">Gabriel Vilar</h1>
-        <h2 class="text-[rgb(126, 119, 119)] text-[clamp(0.8rem, 4vw, 1.5rem)]">Web Developer</h2>
+    <div class="h-screen flex justify-center items-center flex-col mb-[50px]" id="hero">
+      <div class="h-[60vh] w-[50vw] flex justify-center items-center flex-col m-auto gap-[1vh]">
+        <img src="./src/assets/IMG_2203.jpg" alt="foto perfil" class="h-[250px] w-[250px] rounded-full mb-[3vh]"/>
+        <h1 class="text-[rgb(182,175,175)] text-[clamp(1.3rem,7.5vw,4rem)]">Gabriel Vilar</h1>
+        <h2 class="text-[rgb(126,119,119)] text-[clamp(0.8rem,4vw,1.5rem)]">Web Developer</h2>
       </div>
     </div>
 
